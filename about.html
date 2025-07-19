@@ -3,27 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About CrediMate</title>
+    <title>About YourAIMate</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <h1>CrediMate</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="index.html#contact">Contact</a>
-        </nav>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-3xl font-bold">YourAIMate</h1>
+            <nav>
+                <a href="index.html" class="px-4 hover:text-blue-200">Home</a>
+                <a href="about.html" class="px-4 hover:text-blue-200">About</a>
+                <a href="index.html#contact" class="px-4 hover:text-blue-200">Contact</a>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section>
-            <h2>About Us</h2>
-            <p>CrediMate, operated by Morning Glory Educational Charitable Society, helps users find the perfect credit card with personalized recommendations via our WhatsApp chatbot.</p>
-            <p>Our mission is to simplify financial decisions with expert advice and cutting-edge technology.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 CrediMate. All rights reserved.</p>
+
+    <!-- About Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">About YourAIMate</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">YourAIMate, operated by Morning Glory Educational Charitable Society, is a platform dedicated to simplifying your financial and technological decisions. We offer three smart WhatsApp bots: CrediMate for credit card recommendations, AIMate for AI tool suggestions, and PolicyMate for insurance guidance. Our mission is to empower users with personalized, accessible, and friendly advice.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4 text-center">
+        <p>© 2025 YourAIMate. All rights reserved.</p>
     </footer>
 </body>
 </html>
