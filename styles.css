@@ -1,22 +1,26 @@
-/* Custom styles to enhance Tailwind */
+
 header {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.animate-bounce {
-    animation: bounce 2s infinite;
+.animate-pulse {
+    animation: pulse 2s infinite;
 }
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
 }
-.cta-button:hover {
-    transform: scale(1.05);
+.card:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.card img {
     transition: transform 0.3s ease;
 }
 form input, form textarea {
-    transition: border-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 form input:focus, form textarea:focus {
     border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
     outline: none;
 }
