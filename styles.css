@@ -1,37 +1,22 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-}
+/* Custom styles to enhance Tailwind */
 header {
-    background: #007bff;
-    color: white;
-    text-align: center;
-    padding: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-nav a {
-    color: white;
-    margin: 0 1em;
-    text-decoration: none;
+.animate-bounce {
+    animation: bounce 2s infinite;
 }
-main {
-    max-width: 800px;
-    margin: 2em auto;
-    padding: 0 1em;
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
 }
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #28a745;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+.cta-button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
-footer {
-    text-align: center;
-    padding: 1em;
-    background: #333;
-    color: white;
+form input, form textarea {
+    transition: border-color 0.3s ease;
+}
+form input:focus, form textarea:focus {
+    border-color: #2563eb;
+    outline: none;
 }
