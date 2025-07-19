@@ -3,33 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CrediMate - Your Credit Card Assistant</title>
+    <title>YourAIMate - Smart WhatsApp Bots</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <h1>CrediMate</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="#contact">Contact</a>
-        </nav>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-3xl font-bold">YourAIMate</h1>
+            <nav>
+                <a href="index.html" class="px-4 hover:text-blue-200">Home</a>
+                <a href="about.html" class="px-4 hover:text-blue-200">About</a>
+                <a href="#contact" class="px-4 hover:text-blue-200">Contact</a>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section>
-            <h2>Welcome to CrediMate</h2>
-            <p>Your trusted assistant for choosing the best credit cards tailored to your needs. Get personalized recommendations and expert advice!</p>
-            <a href="#contact" class="cta-button">Get Started</a>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: support@credimate.com</p>
-            <p>Phone: +91-9876543210</p>
-            <p>Address: 123 Business Street, Mumbai, India</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 CrediMate. All rights reserved.</p>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-500 text-white py-20 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-4 animate-bounce">Welcome to YourAIMate</h2>
+            <p class="text-xl mb-6">Discover smart WhatsApp bots to simplify your life: CrediMate, AIMate, and PolicyMate.</p>
+            <a href="#bots" class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition">Explore Our Bots</a>
+        </div>
+    </section>
+
+    <!-- Bots Section -->
+    <section id="bots" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our WhatsApp Bots</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- CrediMate -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+                    <img src="https://via.placeholder.com/300x200?text=CrediMate" alt="CrediMate" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-2xl font-semibold mt-4">CrediMate</h3>
+                    <p class="mt-2 text-gray-600">Find the perfect credit card with personalized recommendations tailored to your lifestyle. Get expert advice and apply easily via WhatsApp!</p>
+                    <a href="https://wa.me/+919876543210?text=Hi CrediMate, suggest a credit card!" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Chat Now</a>
+                </div>
+                <!-- AIMate -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+                    <img src="https://via.placeholder.com/300x200?text=AIMate" alt="AIMate" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-2xl font-semibold mt-4">AIMate</h3>
+                    <p class="mt-2 text-gray-600">Explore the best AI tools for your needs. From productivity to creativity, AIMate recommends top AI solutions via WhatsApp.</p>
+                    <a href="https://wa.me/+919876543210?text=Hi AIMate, recommend an AI tool!" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Chat Now</a>
+                </div>
+                <!-- PolicyMate -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+                    <img src="https://via.placeholder.com/300x200?text=PolicyMate" alt="PolicyMate" class="w-full h-48 object-cover rounded-t-lg">
+                    <h3 class="text-2xl font-semibold mt-4">PolicyMate</h3>
+                    <p class="mt-2 text-gray-600">Get personalized insurance advice to protect what matters most. PolicyMate guides you to the right policies via WhatsApp.</p>
+                    <a href="https://wa.me/+919876543210?text=Hi PolicyMate, suggest an insurance plan!" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Chat Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-200 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Get in Touch</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                <div class="text-center">
+                    <p class="text-lg"><strong>Email:</strong> support@youraimate.com</p>
+                    <p class="text-lg"><strong>Phone:</strong> +91-9876543210</p>
+                    <p class="text-lg"><strong>Address:</strong> 123 Business Street, Mumbai, India</p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <form action="#" class="space-y-4">
+                        <input type="text" placeholder="Your Name" class="w-full p-3 rounded border">
+                        <input type="email" placeholder="Your Email" class="w-full p-3 rounded border">
+                        <textarea placeholder="Your Message" class="w-full p-3 rounded border h-32"></textarea>
+                        <button type="submit" class="bg-green-500 text-white px-6 py-3 rounded hover:bg-green-600 transition">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4 text-center">
+        <p>© 2025 YourAIMate. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
