@@ -5,53 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YourAIMate - Smart WhatsApp Bots</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="https://images.pexels.com/photos/3184297/pexels-photo-3184297.jpeg?auto=compress&cs=tinysrgb&w=32">
     <meta name="description" content="YourAIMate offers AI-powered WhatsApp bots: CrediMate, AIMate, and PolicyMate for credit cards, AI tools, and insurance.">
     <meta name="keywords" content="YourAIMate, CrediMate, AIMate, PolicyMate, WhatsApp bot, AI, finance, insurance">
+    <meta property="og:title" content="YourAIMate - Smart WhatsApp Bots">
+    <meta property="og:description" content="Simplify your financial and tech decisions with our AI-powered WhatsApp bots.">
+    <meta property="og:image" content="https://images.pexels.com/photos/3184297/pexels-photo-3184297.jpeg?auto=compress&cs=tinysrgb&w=1200">
+    <meta name="twitter:card" content="summary_large_image">
 </head>
-<body class="bg-gray-50 font-sans">
+<body class="bg-blue-50 font-poppins">
+    <!-- Sticky WhatsApp Button -->
+    <a href="https://wa.me/+919876543210?text=Hi YourAIMate, I have a question!" class="fixed bottom-6 right-6 bg-blue-500 text-white p-4 rounded-full shadow-lg hover:bg-blue-600 transition transform hover:scale-110 z-20" aria-label="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
     <!-- Header -->
-    <header class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-4 sticky top-0 z-10 shadow-md">
-        <div class="container mx-auto flex justify-between items-center px-4">
-            <h1 class="text-3xl font-extrabold">YourAIMate</h1>
-            <nav class="space-x-6">
-                <a href="index.html" class="hover:text-blue-200 transition">Home</a>
-                <a href="about.html" class="hover:text-blue-200 transition">About</a>
-                <a href="privacy.html" class="hover:text-blue-200 transition">Privacy Policy</a>
-                <a href="#contact" class="hover:text-blue-200 transition">Contact</a>
+    <header class="bg-blue-700 text-white py-4 sticky top-0 z-10 shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-2 sm:px-4">
+            <h1 class="text-2xl sm:text-3xl font-bold">YourAIMate</h1>
+            <nav class="space-x-4 sm:space-x-6">
+                <a href="index.html" class="hover:text-teal-200 transition">Home</a>
+                <a href="about.html" class="hover:text-teal-200 transition">About</a>
+                <a href="blog.html" class="hover:text-teal-200 transition">Blog</a>
+                <a href="privacy.html" class="hover:text-teal-200 transition">Privacy Policy</a>
+                <a href="#contact" class="hover:text-teal-200 transition">Contact</a>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-cover bg-center py-24 text-center relative" style="background-image: url('https://images.unsplash.com/photo-1516321310766-61b7b7b03a57?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')">
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div class="container mx-auto px-4 relative z-10">
-            <h2 class="text-5xl font-bold text-gray-800 mb-4 animate-pulse text-shadow-lg">Discover YourAIMate</h2>
-            <p class="text-xl text-gray-800 mb-8 max-w-2xl mx-auto text-shadow">Connect with our smart WhatsApp bots—CrediMate, AIMate, and PolicyMate—to simplify your financial and tech decisions!</p>
-            <a href="#bots" class="bg-green-500 text-white px-8 py-3 rounded-full hover:bg-green-600 transition transform hover:scale-105">Meet Our Bots</a>
+    <section class="bg-cover bg-center py-16 sm:py-24 text-center relative" style="background-image: url('https://images.pexels.com/photos/3184297/pexels-photo-3184297.jpeg?auto=compress&cs=tinysrgb&w=1920')">
+        <div class="absolute inset-0 bg-black bg-opacity-80"></div>
+        <div class="container mx-auto px-2 sm:px-4 relative z-10">
+            <h2 class="text-2xl sm:text-5xl font-bold text-white mb-4 animate-pulse text-shadow-lg">Discover YourAIMate</h2>
+            <p class="text-base sm:text-xl text-white mb-8 max-w-xl sm:max-w-2xl mx-auto text-shadow">Connect with our smart WhatsApp bots—CrediMate, AIMate, and PolicyMate—to simplify your financial and tech decisions!</p>
+            <a href="#bots" class="bg-blue-500 text-white px-6 sm:px-8 py-3 rounded-full hover:bg-blue-600 transition transform hover:scale-105" aria-label="Meet Our Bots">Meet Our Bots</a>
+        </div>
+    </section>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 60C240 120 480 0 720 60C960 120 1200 0 1440 60V0H0V60Z" fill="#EFF6FF"/>
+        </svg>
+    </div>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-16 bg-gradient-to-b from-blue-50 to-white">
+        <div class="container mx-auto px-2 sm:px-4">
+            <h2 class="text-2xl sm:text-4xl font-bold text-center mb-12 text-gray-800">How It Works</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
+                <div class="text-center">
+                    <i class="fas fa-comment-alt text-4xl text-teal-500 mb-4"></i>
+                    <h3 class="text-lg sm:text-xl font-semibold text-gray-800">1. Chat with a Bot</h3>
+                    <p class="mt-2 text-gray-600">Click a “Chat Now” button to message our bots on WhatsApp.</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-lightbulb text-4xl text-teal-500 mb-4"></i>
+                    <h3 class="text-lg sm:text-xl font-semibold text-gray-800">2. Get Personalized Advice</h3>
+                    <p class="mt-2 text-gray-600">Answer a few questions for tailored recommendations.</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-check-circle text-4xl text-teal-500 mb-4"></i>
+                    <h3 class="text-lg sm:text-xl font-semibold text-gray-800">3. Make Informed Decisions</h3>
+                    <p class="mt-2 text-gray-600">Choose the best credit card, AI tool, or insurance plan.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Why Choose YourAIMate?</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-lg transform transition hover:scale-105">
-                    <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Personalized" class="w-full h-48 object-cover rounded-t-lg">
-                    <h3 class="text-2xl font-semibold mt-4 text-gray-800">Personalized Advice</h3>
-                    <p class="mt-2 text-gray-600">Our bots tailor recommendations to your unique needs, whether it’s credit cards, AI tools, or insurance.</p>
+    <section id="features" class="py-16 bg-gradient-to-b from-blue-50 to-white">
+        <div class="container mx-auto px-2 sm:px-4">
+            <h2 class="text-2xl sm:text-4xl font-bold text-center mb-12 text-gray-800">Why Choose YourAIMate?</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-lg transform transition hover:scale-105 flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-user-check text-4xl text-teal-500 mb-4"></i>
+                            <h3 class="text-lg sm:text-2xl font-semibold text-gray-800">Personalized Advice</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600&h=300&fit=crop" alt="Personalized Advice" class="w-full h-40 sm:h-48 object-cover rounded-lg mx-auto" loading="lazy">
+                            <p class="mt-2 text-gray-600 p-4">Tailored recommendations for your unique needs.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg transform transition hover:scale-105">
-                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="24/7 Availability" class="w-full h-48 object-cover rounded-t-lg">
-                    <h3 class="text-2xl font-semibold mt-4 text-gray-800">24/7 Availability</h3>
-                    <p class="mt-2 text-gray-600">Chat with our bots anytime, anywhere via WhatsApp for instant support and guidance.</p>
+                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-lg transform transition hover:scale-105 flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-clock text-4xl text-teal-500 mb-4"></i>
+                            <h3 class="text-lg sm:text-2xl font-semibold text-gray-800">24/7 Availability</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600&h=300&fit=crop" alt="24/7 Availability" class="w-full h-40 sm:h-48 object-cover rounded-lg mx-auto" loading="lazy">
+                            <p class="mt-2 text-gray-600 p-4">Chat anytime, anywhere via WhatsApp.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg transform transition hover:scale-105">
-                    <img src="https://images.unsplash.com/photo-1551288049-b1f3a0c3f3e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Easy to Use" class="w-full h-48 object-cover rounded-t-lg">
-                    <h3 class="text-2xl font-semibold mt-4 text-gray-800">Easy to Use</h3>
-                    <p class="mt-2 text-gray-600">Simple, conversational interfaces make getting advice as easy as texting a friend.</p>
+                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-lg transform transition hover:scale-105 flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <i class="fas fa-mobile-alt text-4xl text-teal-500 mb-4"></i>
+                            <h3 class="text-lg sm:text-2xl font-semibold text-gray-800">Easy to Use</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="https://images.pexels.com/photos/3184293/pexels-photo-3184293.jpeg?auto=compress&cs=tinysrgb&w=600&h=300&fit=crop" alt="Easy to Use" class="w-full h-40 sm:h-48 object-cover rounded-lg mx-auto" loading="lazy">
+                            <p class="mt-2 text-gray-600 p-4">Conversational interfaces as simple as texting.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -59,98 +124,156 @@
 
     <!-- Bots Section -->
     <section id="bots" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Our Smart Bots</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                <!-- CrediMate -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 card">
-                    <img src="https://images.unsplash.com/photo-1609606834377-297e6b468a7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="CrediMate" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold text-gray-800">CrediMate</h3>
-                        <p class="mt-2 text-gray-600">Find the perfect credit card with personalized recommendations for shopping, travel, and more. Chat now to get started!</p>
-                        <a href="https://wa.me/+919876543210?text=Hi CrediMate, suggest a credit card!" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Chat with CrediMate</a>
+        <div class="container mx-auto px-2 sm:px-4">
+            <h2 class="text-2xl sm:text-4xl font-bold text-center mb-12 text-gray-800">Our Smart Bots</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 card relative">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="CrediMate" class="w-full h-48 sm:h-56 object-cover rounded-lg mx-auto" loading="lazy">
+                        <div class="absolute inset-0 bg-teal-500 bg-opacity-20 rounded-lg"></div>
+                        <i class="fas fa-credit-card absolute top-4 left-4 text-2xl text-teal-500"></i>
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-2xl font-semibold text-gray-800">CrediMate</h3>
+                        <p class="mt-2 text-gray-600">Find the perfect credit card with personalized recommendations for shopping, travel, and more.</p>
+                        <a href="https://wa.me/+919876543210?text=Hi CrediMate, suggest a credit card!" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition" aria-label="Chat with CrediMate">Chat with CrediMate</a>
                     </div>
                 </div>
-                <!-- AIMate -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 card">
-                    <img src="https://images.unsplash.com/photo-1516321310766-61b7b7b03a57?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="AIMate" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold text-gray-800">AIMate</h3>
-                        <p class="mt-2 text-gray-600">Discover the best AI tools for productivity, creativity, or business. Get tailored suggestions via WhatsApp!</p>
-                        <a href="https://wa.me/+919876543210?text=Hi AIMate, recommend an AI tool!" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Chat with AIMate</a>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 card relative">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/17483871/pexels-photo-17483871.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="AIMate" class="w-full h-48 sm:h-56 object-cover rounded-lg mx-auto" loading="lazy">
+                        <div class="absolute inset-0 bg-teal-500 bg-opacity-20 rounded-lg"></div>
+                        <i class="fas fa-robot absolute top-4 left-4 text-2xl text-teal-500"></i>
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-2xl font-semibold text-gray-800">AIMate</h3>
+                        <p class="mt-2 text-gray-600">Discover the best AI tools for productivity, creativity, or business via WhatsApp.</p>
+                        <a href="https://wa.me/+919876543210?text=Hi AIMate, recommend an AI tool!" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition" aria-label="Chat with AIMate">Chat with AIMate</a>
                     </div>
                 </div>
-                <!-- PolicyMate -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 card">
-                    <img src="https://images.unsplash.com/photo-1501163268664-3fdf1d04755c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="PolicyMate" class="w-full h-56 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-semibold text-gray-800">PolicyMate</h3>
-                        <p class="mt-2 text-gray-600">Get expert insurance advice to protect what matters most. Find the right policy with ease!</p>
-                        <a href="https://wa.me/+919876543210?text=Hi PolicyMate, suggest an insurance plan!" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Chat with PolicyMate</a>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 card relative">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/5999920/pexels-photo-5999920.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="PolicyMate" class="w-full h-48 sm:h-56 object-cover rounded-lg mx-auto" loading="lazy">
+                        <div class="absolute inset-0 bg-teal-500 bg-opacity-20 rounded-lg"></div>
+                        <i class="fas fa-shield-alt absolute top-4 left-4 text-2xl text-teal-500"></i>
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-2xl font-semibold text-gray-800">PolicyMate</h3>
+                        <p class="mt-2 text-gray-600">Get expert insurance advice to protect what matters most with ease.</p>
+                        <a href="https://wa.me/+919876543210?text=Hi PolicyMate, suggest an insurance plan!" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition" aria-label="Chat with PolicyMate">Chat with PolicyMate</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">What Our Users Say</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <p class="text-gray-600 italic">"CrediMate helped me find a credit card that fits my travel needs perfectly!"</p>
-                    <p class="mt-4 font-semibold text-gray-800">Priya S., Mumbai</p>
+    <!-- Blog Preview Section -->
+    <section id="blog-preview" class="py-16 bg-gradient-to-b from-blue-50 to-white">
+        <div class="container mx-auto px-2 sm:px-4">
+            <h2 class="text-2xl sm:text-4xl font-bold text-center mb-12 text-gray-800">Explore Our Blog</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Choose the Best Credit Card" class="w-full h-48 sm:h-56 object-cover rounded-t-lg mx-auto" loading="lazy">
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-semibold text-gray-800">5 Tips to Choose the Best Credit Card</h3>
+                        <p class="mt-2 text-gray-600">Learn how to pick the perfect credit card for your lifestyle in 2025.</p>
+                        <a href="blog-choose-credit-card.html" class="mt-4 inline-block text-blue-500 hover:underline" aria-label="Read more about choosing credit cards">Read More</a>
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <p class="text-gray-600 italic">"AIMate recommended amazing AI tools that boosted my productivity!"</p>
-                    <p class="mt-4 font-semibold text-gray-800">Rahul K., Delhi</p>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/17483871/pexels-photo-17483871.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Top AI Tools 2025" class="w-full h-48 sm:h-56 object-cover rounded-t-lg mx-auto" loading="lazy">
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-semibold text-gray-800">Top 10 AI Tools to Boost Productivity in 2025</h3>
+                        <p class="mt-2 text-gray-600">Discover the best AI tools to streamline your work and creativity.</p>
+                        <a href="blog-ai-tools-2025.html" class="mt-4 inline-block text-blue-500 hover:underline" aria-label="Read more about AI tools">Read More</a>
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <p class="text-gray-600 italic">"PolicyMate made choosing insurance so easy and stress-free!"</p>
-                    <p class="mt-4 font-semibold text-gray-800">Anita R., Bangalore</p>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://images.pexels.com/photos/5999920/pexels-photo-5999920.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Choose Insurance Plan" class="w-full h-48 sm:h-56 object-cover rounded-t-lg mx-auto" loading="lazy">
+                    <div class="p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl font-semibold text-gray-800">How to Pick the Right Insurance Plan</h3>
+                        <p class="mt-2 text-gray-600">Get expert tips to choose the best insurance plan for your family.</p>
+                        <a href="blog-insurance-plan.html" class="mt-4 inline-block text-blue-500 hover:underline" aria-label="Read more about insurance plans">Read More</a>
+                    </div>
                 </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="blog.html" class="bg-blue-500 text-white px-6 sm:px-8 py-3 rounded-full hover:bg-blue-600 transition transform hover:scale-105" aria-label="View All Blog Posts">View All Posts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section (Carousel) -->
+    <section id="testimonials" class="py-16 bg-gradient-to-b from-blue-50 to-white">
+        <div class="container mx-auto px-2 sm:px-4">
+            <h2 class="text-2xl sm:text-4xl font-bold text-center mb-12 text-gray-800">What Our Users Say</h2>
+            <div class="carousel relative overflow-hidden">
+                <div class="carousel-inner flex transition-transform duration-500">
+                    <div class="carousel-item bg-white p-4 sm:p-6 rounded-lg shadow-lg min-w-full sm:min-w-[50%]">
+                        <p class="text-gray-600 italic">“CrediMate helped me find a credit card that fits my travel needs perfectly!”</p>
+                        <p class="mt-4 font-semibold text-gray-800">Priya S., Mumbai</p>
+                    </div>
+                    <div class="carousel-item bg-white p-4 sm:p-6 rounded-lg shadow-lg min-w-full sm:min-w-[50%]">
+                        <p class="text-gray-600 italic">“AIMate recommended amazing AI tools that boosted my productivity!”</p>
+                        <p class="mt-4 font-semibold text-gray-800">Rahul K., Delhi</p>
+                    </div>
+                    <div class="carousel-item bg-white p-4 sm:p-6 rounded-lg shadow-lg min-w-full sm:min-w-[50%]">
+                        <p class="text-gray-600 italic">“PolicyMate made choosing insurance so easy and stress-free!”</p>
+                        <p class="mt-4 font-semibold text-gray-800">Anita R., Bangalore</p>
+                    </div>
+                </div>
+                <button class="carousel-prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-amber-500 text-white p-2 rounded-full hover:bg-amber-600" aria-label="Previous Testimonial">❮</button>
+                <button class="carousel-next absolute right-0 top-1/2 transform -translate-y-1/2 bg-amber-500 text-white p-2 rounded-full hover:bg-amber-600" aria-label="Next Testimonial">❯</button>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
     <section id="faq" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Frequently Asked Questions</h2>
+        <div class="container mx-auto px-2 sm:px-4">
+            <h2 class="text-2xl sm:text-4xl font-bold text-center mb-12 text-gray-800">Frequently Asked Questions</h2>
             <div class="space-y-6 max-w-3xl mx-auto">
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold text-gray-800">How do I start using YourAIMate bots?</h3>
-                    <p class="mt-2 text-gray-600">Simply click the "Chat Now" buttons to message our bots on WhatsApp. Follow the prompts to get personalized recommendations!</p>
+                <div class="bg-blue-50 p-4 sm:p-6 rounded-lg shadow-md">
+                    <h3 class="text-base sm:text-xl font-semibold text-gray-800">How do I start using YourAIMate bots?</h3>
+                    <p class="mt-2 text-gray-600">Click the “Chat Now” buttons to message our bots on WhatsApp. Follow the prompts to get personalized recommendations!</p>
                 </div>
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold text-gray-800">Is my data safe with YourAIMate?</h3>
+                <div class="bg-blue-50 p-4 sm:p-6 rounded-lg shadow-md">
+                    <h3 class="text-base sm:text-xl font-semibold text-gray-800">Is my data safe with YourAIMate?</h3>
                     <p class="mt-2 text-gray-600">Yes, we prioritize your privacy. Check our <a href="privacy.html" class="text-blue-600 hover:underline">Privacy Policy</a> for details.</p>
                 </div>
-                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold text-gray-800">Can I use all three bots?</h3>
+                <div class="bg-blue-50 p-4 sm:p-6 rounded-lg shadow-md">
+                    <h3 class="text-base sm:text-xl font-semibold text-gray-800">Can I use all three bots?</h3>
                     <p class="mt-2 text-gray-600">Absolutely! Each bot—CrediMate, AIMate, and PolicyMate—is designed for specific needs and can be used independently.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- CTA Banner -->
+    <section class="py-12 bg-blue-700 text-white text-center">
+        <div class="container mx-auto px-2 sm:px-4">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-4">Ready to Simplify Your Decisions?</h2>
+            <p class="text-base sm:text-lg mb-6 max-w-xl mx-auto">Chat with our AI-powered bots on WhatsApp today!</p>
+            <a href="https://wa.me/+919876543210?text=Hi YourAIMate, I want to start!" class="bg-blue-500 text-white px-6 sm:px-8 py-3 rounded-full hover:bg-blue-600 transition transform hover:scale-105" aria-label="Start Chatting Now">Start Chatting Now</a>
+        </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="bg-gray-100 py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Get in Touch</h2>
-            <div class="flex flex-col md:flex-row justify-center items-start gap-12">
+    <section id="contact" class="bg-gradient-to-b from-blue-50 to-white py-16">
+        <div class="container mx-auto px-2 sm:px-4">
+            <h2 class="text-2xl sm:text-4xl font-bold text-center mb-12 text-gray-800">Get in Touch</h2>
+            <div class="flex flex-col md:flex-row justify-center items-start gap-8 sm:gap-12">
                 <div class="text-center md:text-left">
-                    <p class="text-lg mb-2"><strong>Email:</strong> support@youraimate.com</p>
-                    <p class="text-lg mb-2"><strong>Phone:</strong> +91-9876543210</p>
-                    <p class="text-lg"><strong>Address:</strong> 123 Business Street, Mumbai, India</p>
+                    <p class="text-base sm:text-lg mb-2"><strong>Email:</strong> <a href="mailto:support@youraimate.com" class="text-blue-600 hover:underline">support@youraimate.com</a></p>
+                    <p class="text-base sm:text-lg mb-2"><strong>Phone:</strong> +91-9876543210</p>
+                    <p class="text-base sm:text-lg"><strong>Address:</strong> 123 Business Street, Mumbai, India</p>
                 </div>
                 <div class="w-full md:w-1/2">
                     <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-6">
-                        <input type="text" name="name" placeholder="Your Name" class="w-full p-4 rounded-lg border border-gray-300 focus:border-blue-500 focus:outline-none transition" required>
-                        <input type="email" name="email" placeholder="Your Email" class="w-full p-4 rounded-lg border border-gray-300 focus:border-blue-500 focus:outline-none transition" required>
-                        <textarea name="message" placeholder="Your Message" class="w-full p-4 rounded-lg border border-gray-300 focus:border-blue-500 focus:outline-none transition h-36" required></textarea>
-                        <button type="submit" class="bg-green-500 text-white px-8 py-3 rounded-full hover:bg-green-600 transition transform hover:scale-105">Send Message</button>
+                        <input type="text" name="name" placeholder="Your Name" class="w-full p-3 sm:p-4 rounded-lg border border-gray-300 focus:border-blue-500 focus:outline-none transition" required aria-label="Your Name">
+                        <input type="email" name="email" placeholder="Your Email" class="w-full p-3 sm:p-4 rounded-lg border border-gray-300 focus:border-blue-500 focus:outline-none transition" required aria-label="Your Email">
+                        <textarea name="message" placeholder="Your Message" class="w-full p-3 sm:p-4 rounded-lg border border-gray-300 focus:border-blue-500 focus:outline-none transition h-32 sm:h-36" required aria-label="Your Message"></textarea>
+                        <button type="submit" class="bg-blue-500 text-white px-6 sm:px-8 py-3 rounded-full hover:bg-blue-600 transition transform hover:scale-105" aria-label="Send Message">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -159,8 +282,15 @@
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-6 text-center">
-        <p>© 2025 YourAIMate, Morning Glory Educational Charitable Society. All rights reserved.</p>
-        <p class="mt-2"><a href="privacy.html" class="hover:text-blue-200">Privacy Policy</a></p>
+        <div class="container mx-auto px-2 sm:px-4">
+            <p>© 2025 YourAIMate, Morning Glory Educational Charitable Society. All rights reserved.</p>
+            <p class="mt-2">
+                <a href="privacy.html" class="hover:text-teal-200 mx-2">Privacy Policy</a> |
+                <a href="https://facebook.com/youraimate" class="hover:text-teal-200 mx-2" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/youraimate" class="hover:text-teal-200 mx-2" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com/company/youraimate" class="hover:text-teal-200 mx-2" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
